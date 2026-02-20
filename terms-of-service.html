@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | DTA Electrical Mechanical Limited</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-primary: #0072CE; --blue-dark: #004E8C; --blue-light: #3399E0;
+            --blue-accent: #00A3FF; --dark: #1A1A2E; --text-dark: #1A1A2E;
+            --text-medium: #4A4A6A; --text-light: #6B6B8D; --bg-white: #FFFFFF;
+            --bg-light: #F4F7FB; --border-light: #E0E8F0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+        .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 80px; }
+        .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .nav-logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 22px; color: var(--text-dark); letter-spacing: 1px; }
+        .nav-logo-text span { color: var(--blue-primary); }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--text-medium); font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--blue-primary); }
+        .nav-cta { background: var(--blue-primary); color: white !important; padding: 10px 24px; border-radius: 6px; }
+        .nav-cta:hover { background: var(--blue-dark) !important; }
+        .page-header { padding: 140px 24px 60px; background: linear-gradient(135deg, var(--dark) 0%, #0D1B3E 50%, var(--blue-dark) 100%); text-align: center; }
+        .page-header h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: white; margin-bottom: 12px; }
+        .page-header p { color: rgba(255,255,255,0.5); font-size: 1rem; }
+        .policy-content { max-width: 800px; margin: 0 auto; padding: 60px 24px 100px; }
+        .policy-content h2 { font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-top: 40px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--bg-light); }
+        .policy-content h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-top: 28px; margin-bottom: 12px; }
+        .policy-content p { color: var(--text-medium); margin-bottom: 16px; line-height: 1.8; }
+        .policy-content ul { color: var(--text-medium); margin-bottom: 16px; padding-left: 24px; line-height: 1.8; }
+        .policy-content li { margin-bottom: 6px; }
+        .policy-content a { color: var(--blue-primary); }
+        .policy-content a:hover { text-decoration: underline; }
+        .policy-content .last-updated { display: inline-block; background: var(--bg-light); padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; color: var(--text-light); margin-bottom: 32px; }
+        .footer { background: var(--dark); padding: 40px 24px; color: rgba(255,255,255,0.5); text-align: center; }
+        .footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 12px; font-size: 0.9rem; }
+        .footer a:hover { color: var(--blue-accent); }
+        .footer p { margin-top: 16px; font-size: 0.85rem; }
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 8px; }
+        .mobile-toggle span { width: 24px; height: 2px; background: var(--text-dark); }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 80px; left: 0; right: 0; background: white; flex-direction: column; padding: 24px; gap: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: flex; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-text">DTA <span>|</span> Electrical Mechanical</div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get a Quote</a></li>
+            </ul>
+            <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Terms of Service</h1>
+        <p>The terms and conditions governing our services</p>
+    </div>
+
+    <div class="policy-content">
+        <div class="last-updated">Last updated: February 2026</div>
+
+        <h2>1. Introduction</h2>
+        <p>These Terms of Service ("Terms") govern the use of the website and services provided by DTA Electrical Mechanical Limited ("the Company", "we", "us", "our"), a company registered in England and Wales. By accessing our website or engaging our services, you agree to be bound by these Terms.</p>
+        <p>Please read these Terms carefully before using our website or requesting our services. If you do not agree with any part of these Terms, you should not use our website or services.</p>
+
+        <h2>2. About Us</h2>
+        <p>DTA Electrical Mechanical Limited provides commercial and industrial electrical and mechanical engineering services, including but not limited to electrical installations, mechanical engineering, testing and inspection, planned maintenance, emergency power systems, and commercial fit-outs.</p>
+
+        <h2>3. Use of Our Website</h2>
+        <p>You may use our website for lawful purposes only. You must not use our website:</p>
+        <ul>
+            <li>In any way that breaches any applicable local, national, or international law or regulation</li>
+            <li>In any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect</li>
+            <li>To transmit, or procure the sending of, any unsolicited or unauthorised advertising or promotional material</li>
+            <li>To knowingly transmit any data or material that contains viruses, trojan horses, worms, or any other harmful programs or code</li>
+        </ul>
+
+        <h2>4. Quotations and Estimates</h2>
+        <p>Any quotations or estimates provided by us are valid for a period of 30 days from the date of issue, unless otherwise stated in writing. Quotations are based on the information provided to us at the time of enquiry and may be subject to change if the scope of work differs from what was described.</p>
+        <p>A quotation does not constitute a binding contract. A contract is formed only when we confirm acceptance of your order in writing or when we commence the agreed works.</p>
+
+        <h2>5. Our Services</h2>
+        <h3>5.1 Standard of Work</h3>
+        <p>We undertake to carry out all work with reasonable skill and care, in accordance with applicable British Standards, IET Wiring Regulations (BS 7671), and all relevant legislation and industry codes of practice.</p>
+
+        <h3>5.2 Compliance</h3>
+        <p>All electrical work is carried out in accordance with Part P of the Building Regulations (where applicable) and current IET Wiring Regulations. We are committed to maintaining all necessary certifications and accreditations required to perform the services we offer.</p>
+
+        <h3>5.3 Timescales</h3>
+        <p>We will endeavour to complete all works within the agreed timescales. However, completion dates are estimates and may be affected by factors beyond our control, including but not limited to access restrictions, supply chain delays, weather conditions, and the discovery of unforeseen issues during the course of works.</p>
+
+        <h2>6. Payment Terms</h2>
+        <ul>
+            <li>Payment terms will be specified in the quotation or contract for each project</li>
+            <li>For larger projects, staged payments may be required as agreed in writing</li>
+            <li>Invoices are payable within 30 days of the invoice date, unless otherwise agreed</li>
+            <li>We reserve the right to charge interest on overdue payments in accordance with the Late Payment of Commercial Debts (Interest) Act 1998</li>
+            <li>VAT will be charged at the applicable rate where we are VAT registered</li>
+        </ul>
+
+        <h2>7. Cancellation</h2>
+        <p>If you wish to cancel agreed works, you must notify us in writing as soon as possible. Where we have already incurred costs, including the purchase of materials or allocation of resources, you may be liable for those costs. Cancellation charges will be communicated to you clearly and promptly.</p>
+
+        <h2>8. Warranties and Guarantees</h2>
+        <p>We provide warranties on our workmanship as follows:</p>
+        <ul>
+            <li>All electrical and mechanical installation work is guaranteed for a minimum of 12 months from the date of completion</li>
+            <li>Manufacturer warranties on materials, equipment, and components are passed through to the client where applicable</li>
+            <li>Warranty claims must be reported in writing within a reasonable period of discovering the defect</li>
+        </ul>
+        <p>These warranties do not cover defects caused by misuse, unauthorised modification, fair wear and tear, or failure to follow maintenance recommendations.</p>
+
+        <h2>9. Limitation of Liability</h2>
+        <p>Nothing in these Terms limits or excludes our liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other matter for which it would be unlawful to exclude or limit liability.</p>
+        <p>Subject to the above, our total liability to you in connection with any contract shall not exceed the total value of the contract. We shall not be liable for any indirect or consequential losses, including but not limited to loss of profit, loss of business, or loss of anticipated savings.</p>
+
+        <h2>10. Intellectual Property</h2>
+        <p>All content on this website, including text, graphics, logos, images, and design, is the property of DTA Electrical Mechanical Limited and is protected by United Kingdom and international copyright laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.</p>
+
+        <h2>11. Health and Safety</h2>
+        <p>We are committed to maintaining the highest standards of health and safety in all our operations. We comply with the Health and Safety at Work etc. Act 1974 and all applicable health and safety legislation. Clients are required to provide us with safe access to work sites and to inform us of any known hazards.</p>
+
+        <h2>12. Force Majeure</h2>
+        <p>We shall not be liable for any failure or delay in performing our obligations where such failure or delay results from events beyond our reasonable control, including but not limited to natural disasters, epidemics, government actions, industrial disputes, supply chain disruption, or utility failures.</p>
+
+        <h2>13. Disputes</h2>
+        <p>We aim to resolve any disputes through direct negotiation in the first instance. If a dispute cannot be resolved informally, either party may refer the matter to mediation or adjudication. These Terms are governed by and construed in accordance with the laws of England and Wales, and the courts of England and Wales shall have exclusive jurisdiction.</p>
+
+        <h2>14. Changes to These Terms</h2>
+        <p>We reserve the right to update these Terms at any time. Any changes will be posted on this page with an updated revision date. Continued use of our website or services after changes are posted constitutes acceptance of the revised Terms.</p>
+
+        <h2>15. Contact Us</h2>
+        <p>If you have any questions about these Terms, please contact us:</p>
+        <p>DTA Electrical Mechanical Limited<br>
+        Store Room, The Old Mill, Kinoulton Rd, Cropwell Bishop, Nottingham NG12 3BE<br>
+        Email: <a href="mailto:admin@dtaelectricalmechanical.co.uk">admin@dtaelectricalmechanical.co.uk</a><br>
+        Phone: <a href="tel:+447886770274">07886 770 274</a></p>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+        <p>&copy; 2026 DTA Electrical Mechanical Limited. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
