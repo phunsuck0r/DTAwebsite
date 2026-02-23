@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Slavery Statement | DTA Electrical Mechanical Limited</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-primary: #0072CE;
+            --blue-dark: #004E8C;
+            --blue-light: #3399E0;
+            --blue-accent: #00A3FF;
+            --dark: #1A1A2E;
+            --text-dark: #1A1A2E;
+            --text-medium: #4A4A6A;
+            --text-light: #6B6B8D;
+            --bg-white: #FFFFFF;
+            --bg-light: #F4F7FB;
+            --border-light: #E0E8F0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+
+        /* NAV */
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 1px 20px rgba(0,0,0,0.06);
+        }
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between; height: 80px;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .nav-logo-text {
+            font-family: 'Montserrat', sans-serif; font-weight: 800;
+            font-size: 22px; color: var(--text-dark); letter-spacing: 1px;
+        }
+        .nav-logo-text span { color: var(--blue-primary); }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a {
+            text-decoration: none; color: var(--text-medium);
+            font-family: 'Montserrat', sans-serif; font-weight: 600;
+            font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--blue-primary); }
+        .nav-cta {
+            background: var(--blue-primary); color: white !important;
+            padding: 10px 24px; border-radius: 6px;
+        }
+        .nav-cta:hover { background: var(--blue-dark) !important; }
+
+        /* HERO HEADER */
+        .page-header {
+            padding: 140px 24px 60px;
+            background: linear-gradient(135deg, var(--dark) 0%, #0D1B3E 50%, var(--blue-dark) 100%);
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: white; margin-bottom: 12px;
+        }
+        .page-header p {
+            color: rgba(255,255,255,0.5); font-size: 1rem;
+        }
+
+        /* CONTENT */
+        .policy-content {
+            max-width: 800px; margin: 0 auto; padding: 60px 24px 100px;
+        }
+        .policy-content h2 {
+            font-size: 1.4rem; font-weight: 700; color: var(--text-dark);
+            margin-top: 40px; margin-bottom: 16px;
+            padding-bottom: 8px; border-bottom: 2px solid var(--bg-light);
+        }
+        .policy-content h3 {
+            font-size: 1.1rem; font-weight: 700; color: var(--text-dark);
+            margin-top: 28px; margin-bottom: 12px;
+        }
+        .policy-content p {
+            color: var(--text-medium); margin-bottom: 16px; line-height: 1.8;
+        }
+        .policy-content ul {
+            color: var(--text-medium); margin-bottom: 16px; padding-left: 24px; line-height: 1.8;
+        }
+        .policy-content li { margin-bottom: 6px; }
+        .policy-content a { color: var(--blue-primary); }
+        .policy-content a:hover { text-decoration: underline; }
+        .policy-content .last-updated {
+            display: inline-block; background: var(--bg-light); padding: 8px 16px;
+            border-radius: 6px; font-size: 0.9rem; color: var(--text-light); margin-bottom: 32px;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--dark); padding: 40px 24px; color: rgba(255,255,255,0.5); text-align: center;
+        }
+        .footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 12px; font-size: 0.9rem; }
+        .footer a:hover { color: var(--blue-accent); }
+        .footer p { margin-top: 16px; font-size: 0.85rem; }
+
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 8px; }
+        .mobile-toggle span { width: 24px; height: 2px; background: var(--text-dark); }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 80px; left: 0; right: 0; background: white; flex-direction: column; padding: 24px; gap: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: flex; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-text">DTA <span>|</span> Electrical Mechanical</div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get In Touch</a></li>
+            </ul>
+            <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Modern Slavery Statement</h1>
+        <p>Our commitment to preventing modern slavery and human trafficking</p>
+    </div>
+
+    <div class="policy-content">
+        <div class="last-updated">Financial year ending: February 2026</div>
+
+        <h2>1. Introduction</h2>
+        <p>DTA Electrical Mechanical Limited ("the Company") is committed to preventing modern slavery and human trafficking in all its forms. This statement is made pursuant to Section 54 of the Modern Slavery Act 2015 and sets out the steps we have taken and continue to take to ensure that modern slavery and human trafficking are not taking place within our business or supply chains.</p>
+        <p>We have a zero-tolerance approach to modern slavery and are committed to acting ethically and with integrity in all our business dealings and relationships.</p>
+
+        <h2>2. Our Business</h2>
+        <p>DTA Electrical Mechanical Limited is a commercial and industrial electrical and mechanical engineering company based in the East Midlands. We provide a range of services including electrical installations, mechanical engineering, testing and inspection, planned maintenance, emergency power systems, and commercial fit-outs.</p>
+        <p>Our workforce consists of directly employed engineers, technicians, and administrative staff. We also engage subcontractors and suppliers to support the delivery of our services.</p>
+
+        <h2>3. Our Supply Chains</h2>
+        <p>Our supply chains include:</p>
+        <ul>
+            <li>Electrical and mechanical materials and equipment suppliers</li>
+            <li>Specialist subcontractors for electrical and mechanical engineering works</li>
+            <li>Plant and tool hire companies</li>
+            <li>Professional services providers (accountancy, legal, insurance)</li>
+            <li>IT and telecommunications providers</li>
+            <li>Waste management and recycling services</li>
+        </ul>
+        <p>The majority of our supply chain is UK-based, though we recognise that some materials and components may originate from overseas manufacturers.</p>
+
+        <h2>4. Our Policies</h2>
+        <p>We operate a number of internal policies to ensure we are conducting business in an ethical and transparent manner. These include:</p>
+        <ul>
+            <li><strong>Recruitment and employment policy:</strong> We operate robust recruitment procedures, including verifying the right to work in the UK for all employees and ensuring fair terms and conditions of employment in line with UK employment law.</li>
+            <li><strong>Whistleblowing policy:</strong> We encourage all employees, subcontractors, and other business partners to report any concerns related to the direct activities of the Company or its supply chains. This includes any circumstances that may give rise to an enhanced risk of slavery or human trafficking.</li>
+            <li><strong>Subcontractor and supplier vetting:</strong> We carry out due diligence when engaging new subcontractors and suppliers, and regularly review existing relationships to ensure compliance with our values and legal requirements.</li>
+            <li><strong>Health and safety policy:</strong> We maintain high standards of health and safety for all workers on our sites, regardless of their employment status.</li>
+        </ul>
+
+        <h2>5. Due Diligence</h2>
+        <p>As part of our efforts to identify and mitigate the risk of modern slavery and human trafficking, we undertake the following due diligence measures:</p>
+        <ul>
+            <li>Verifying the identity and right to work of all directly employed staff</li>
+            <li>Ensuring all employees are paid at least the National Living Wage and receive fair terms of employment</li>
+            <li>Requiring subcontractors to confirm their compliance with the Modern Slavery Act 2015</li>
+            <li>Reviewing subcontractor and supplier arrangements on a regular basis</li>
+            <li>Assessing the risk profile of our supply chain with particular attention to sectors and geographies known to present higher risks</li>
+            <li>Monitoring working conditions on sites under our control</li>
+        </ul>
+
+        <h2>6. Risk Assessment</h2>
+        <p>We consider the following areas as presenting the highest potential risk within our business and supply chains:</p>
+        <ul>
+            <li><strong>Labour supply through agencies:</strong> Where we use agency labour or labour-only subcontractors, we take steps to ensure workers are not being exploited and that agencies operate in compliance with all relevant legislation.</li>
+            <li><strong>Overseas supply chains:</strong> Some electrical and mechanical components are manufactured overseas in jurisdictions where labour protections may be less robust. We work with reputable UK-based distributors and wholesalers to mitigate this risk.</li>
+            <li><strong>Subcontracted works:</strong> When engaging subcontractors, we require evidence of appropriate employment practices and reserve the right to audit their compliance.</li>
+        </ul>
+
+        <h2>7. Training and Awareness</h2>
+        <p>We are committed to raising awareness of modern slavery issues within our business. Key personnel involved in recruitment, procurement, and supply chain management are made aware of the indicators of modern slavery and human trafficking and understand the steps to take if concerns are identified.</p>
+        <p>We encourage all staff to report any concerns or suspicions through our internal reporting channels or, where appropriate, to the Modern Slavery Helpline on 08000 121 700.</p>
+
+        <h2>8. Key Performance Indicators</h2>
+        <p>We measure the effectiveness of our efforts to combat modern slavery through the following indicators:</p>
+        <ul>
+            <li>All new employees have had their right to work verified before commencing employment</li>
+            <li>All subcontractors and key suppliers have been assessed for modern slavery risk</li>
+            <li>No reports of modern slavery have been made within our business or supply chain</li>
+            <li>Staff awareness of modern slavery reporting procedures is maintained</li>
+        </ul>
+
+        <h2>9. Looking Ahead</h2>
+        <p>We are committed to continuously improving our practices to combat modern slavery. In the coming year, we intend to:</p>
+        <ul>
+            <li>Review and strengthen our supply chain due diligence procedures</li>
+            <li>Provide further training to staff involved in procurement and subcontractor management</li>
+            <li>Engage with industry bodies and trade associations to share best practice</li>
+            <li>Review this statement annually and update it to reflect any changes in our approach</li>
+        </ul>
+
+        <h2>10. Approval</h2>
+        <p>This statement has been approved by the directors of DTA Electrical Mechanical Limited and will be reviewed and updated annually.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions about this statement or wish to report a concern, please contact us:</p>
+        <p>DTA Electrical Mechanical Limited<br>
+        Store Room, The Old Mill, Kinoulton Rd, Cropwell Bishop, Nottingham NG12 3BE<br>
+        Email: <a href="mailto:admin@dtaelectricalmechanical.co.uk">admin@dtaelectricalmechanical.co.uk</a><br>
+        Phone: <a href="tel:+447886770274">07886 770 274</a></p>
+        <p>You can also report concerns anonymously to the Modern Slavery Helpline:<br>
+        Phone: 08000 121 700<br>
+        Website: <a href="https://www.modernslaveryhelpline.org" target="_blank" rel="noopener">modernslaveryhelpline.org</a></p>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="modern-slavery-statement.html">Modern Slavery Statement</a>
+        </div>
+        <p>&copy; 2026 DTA Electrical Mechanical Limited. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
